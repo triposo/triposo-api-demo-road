@@ -1,0 +1,81 @@
+.selection-marker {
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 0, 0, 0.7);
+  position: absolute;
+  left: -22px;
+  top: -22px;
+}
+
+.info-marker {
+}
+.info-marker svg {
+  fill: #282c34;
+}
+.info-marker.info-marker-primary svg {
+  fill: #fb433e;
+}
+
+.info-marker h2 {
+  position: absolute;
+  bottom: 24px;
+  left: -50px;
+  font-size: 12px;
+  background-color: #fff;
+  display: none;
+  width: 140px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 4px 8px;
+  margin: 0;
+  z-index: 10;
+}
+.info-marker.marker-active h2 {
+  display: block;
+}
+
+.color-marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.color-marker div {
+  width: 16px;
+  height: 16px;
+  padding-top: 3px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: #282c34;
+  text-align: center;
+  color: #fff;
+}
+
+.color-marker.marker-active div {
+  background-color: #21c5f6;
+}
+
+.spot-marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.spot-marker div {
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: #fb433e;
+}

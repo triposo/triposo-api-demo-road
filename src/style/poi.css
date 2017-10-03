@@ -1,0 +1,92 @@
+.poi {
+  width: 764px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: left;
+  overflow-y: scroll;
+
+  position: absolute;
+  left: 50%;
+  top: 64px;
+  bottom: 64px;
+  margin-left: -382px;
+  z-index: 2;
+
+  transform: translate(0, -2000px);
+}
+
+.poi.shown {
+  opacity: 1;
+  animation: move-in 800ms ease 0ms 1 forwards;
+}
+
+.poi h1 {
+  margin: 0;
+  padding: 10px 32px;
+  color: #2eac6d;
+  background-color: #eee;
+  font-size: 42px;
+  overflow: hidden;
+}
+
+.poi .header-image {
+  background-size: cover;
+  background-position: center center;
+  height: 280px;
+}
+
+.poi .article {
+  padding: 32px;
+}
+
+.poi .sources {
+  padding: 0 32px 32px 32px;
+}
+
+.poi h1 .action-book {
+  float: right;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #2eac6d;
+  color: #fff;
+  margin-top: 9px;
+  text-decoration: none;
+}
+.poi h1 .action-book:hover {
+  background-color: #247e51;
+}
+.poi h1 .action-book span {
+  font-size: 11px;
+  opacity: .6;
+}
+
+.poi h1 .action-book span.price {
+  font-size: 14px;
+  opacity: .8;
+  font-weight: bold;
+}
+
+.poi h1 .action-book span.price em {
+  font-style:normal;
+  font-weight: lighter;
+  opacity: 0.6;
+}
+
+
+@media (max-width: 763px) {
+  .poi {
+    left: 0;
+    top: 44px;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+
+@keyframes move-in {
+  from {transform: translate(0, -2000px)}
+  to   {transform: translate(0, 0)}
+}

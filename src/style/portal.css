@@ -1,0 +1,20 @@
+
+body.noscroll {
+  overflow: hidden;
+}
+.portal {
+  background-color: rgba(0,0,0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  text-align: center;
+  opacity: 0;
+}
+
+.portal.shown {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}

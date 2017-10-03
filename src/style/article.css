@@ -1,0 +1,24 @@
+.article {
+
+}
+
+.article-item {
+  margin-bottom: 32px;
+}
+
+.article h2 {
+  margin-bottom: 20px;
+  padding: 0;
+}
+.article img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.article p {
+  line-height: 1.4em;
+}
+
+.article a {
+  color: #2eac6d;
+}

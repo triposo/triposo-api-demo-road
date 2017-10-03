@@ -1,0 +1,123 @@
+
+
+.poi-item {
+  margin-bottom: 32px;
+  background-color: #eee;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.poi-item.poi-item-shown {
+  opacity: 1;
+  transition: all 200ms ease;
+}
+
+.poi-item .poi-image {
+  background-size: cover;
+  background-position: center center;
+  height: 180px;
+}
+
+.poi-item .poi-image h3 {
+  display: none;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  align-items: center;
+}
+
+.poi-item .poi-image h3 a.title {
+  color: #fff;
+  flex: 1 1 auto;
+  text-decoration: none;
+}
+
+.poi-item .poi-image h3 a.expand {
+  flex: 0 0 40px;
+  margin-left: auto;
+}
+
+.poi-item .poi-image h3 a.expand svg {
+  fill: #eee;
+}
+
+.poi-item h3 {
+  padding: 8px 0 8px 16px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-content: center;
+}
+
+.poi-item h3 a.name {
+  flex: 1 1 auto;
+  text-decoration: none;
+  color: #333;
+}
+
+.poi-item h3 a.save {
+  flex: 0 0 60px;
+  margin-left: auto;
+  color: #FB433E;
+  text-decoration: none;
+  text-align: right;
+  padding-right: 16px;
+}
+
+.poi-item h3 a.save:hover {
+  color: #333;
+}
+
+.poi-item h3 .action-book {
+  flex: 0 0 60px;
+  margin-left: auto;
+
+  background-color: #2EAC6D;
+  color: #fff;
+  padding: 4px 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.poi-item h3 .action-book:hover {
+  background-color: #218453;
+}
+
+.poi-item h3 .price {
+  color: #2EAC6D;
+  padding-right: 16px;
+}
+
+.poi-item h3 .price em {
+  color: #A6a6a6;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 11px;
+}
+
+.poi-item h4 {
+  padding: 0 16px 0 16px;
+  margin-top: -4px;
+  font-weight: normal;
+}
+
+.poi-item.poi-item-use-collapse h3 {
+  display: none;
+}
+.poi-item.poi-item-use-collapse .poi-image {
+  height: auto;
+}
+.poi-item.poi-item-use-collapse .poi-image h3 {
+  display: flex;
+}
+.poi-item.poi-item-use-collapse.poi-item-expand .poi-image {
+  height: 400px;
+}
+
+.poi-item.poi-item-use-collapse.poi-item-expand .poi-image h3 {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.0));
+}
